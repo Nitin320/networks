@@ -40,7 +40,7 @@ int main(){
 	}
 	
 	
-	while(curr < total-frame){
+	while(curr <= total-frame){
 	
 		choice = rand()%2;
 		
@@ -67,7 +67,7 @@ int main(){
 		}
 	}
 	
-	while(curr <= total){
+	while(curr < total){
 		
 		memset(&client_ack, 0, sizeof(int));
 		recv(socket_desc, &client_ack, sizeof(int), 0);
